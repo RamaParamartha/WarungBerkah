@@ -14,7 +14,7 @@ Nama Proyek : Warung Berkah
 
 Sistem database untuk mengelola supplier, faktur, dan barang.
 
-Struktur File
-README.md
-WarungBerkah_ERD.drawio
-WarungBerkah.sql
+# Struktur File
+- README.md
+- WarungBerkah_ERD.drawio
+- WarungBerkah.sql
