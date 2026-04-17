@@ -1,0 +1,127 @@
+<mxfile host="Electron" modified="2024-01-20T00:00:00.000Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.21 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" version="22.1.21" type="device"><diagram id="db_erd" name="WarungBerkah ERD"><mxGraphModel dx="1000" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+
+    <!-- Distributor Table -->
+    <mxCell id="distributor" value="Distributor" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" vertex="1" parent="1">
+      <mxGeometry x="40" y="40" width="180" height="190" as="geometry" />
+    </mxCell>
+    <mxCell id="d_id" value="PK: ID_Distributor (VC)" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" vertex="1" parent="distributor">
+      <mxGeometry y="30" width="180" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="d_nama" value="Nama_Supplier" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" vertex="1" parent="distributor">
+      <mxGeometry y="50" width="180" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="d_tahun" value="Tahun_Mulai_Kontrak" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" vertex="1" parent="distributor">
+      <mxGeometry y="70" width="180" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="d_jalan" value="Jalan" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" vertex="1" parent="distributor">
+      <mxGeometry y="90" width="180" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="d_kota" value="Kota" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" vertex="1" parent="distributor">
+      <mxGeometry y="110" width="180" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="d_kontak" value="Nomor_Kontak" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" vertex="1" parent="distributor">
+      <mxGeometry y="130" width="180" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="d_cabang" value="Detail_Cabang" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" vertex="1" parent="distributor">
+      <mxGeometry y="150" width="180" height="20" as="geometry" />
+    </mxCell>
+
+    <!-- Faktur Table -->
+    <mxCell id="faktur" value="Faktur" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" vertex="1" parent="1">
+      <mxGeometry x="320" y="40" width="180" height="150" as="geometry" />
+    </mxCell>
+    <mxCell id="f_no" value="PK: No_Faktur (VC)" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" vertex="1" parent="faktur">
+      <mxGeometry y="30" width="180" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="f_dist" value="FK: ID_Distributor (VC)" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" vertex="1" parent="faktur">
+      <mxGeometry y="50" width="180" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="f_pesan" value="Tanggal_Pesan" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" vertex="1" parent="faktur">
+      <mxGeometry y="70" width="180" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="f_terima" value="Tanggal_Terima" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" vertex="1" parent="faktur">
+      <mxGeometry y="90" width="180" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="f_lama" value="Lama_Proses_Hari (G)" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" vertex="1" parent="faktur">
+      <mxGeometry y="110" width="180" height="20" as="geometry" />
+    </mxCell>
+
+    <!-- Barang Table -->
+    <mxCell id="barang" value="Barang" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" vertex="1" parent="1">
+      <mxGeometry x="600" y="40" width="180" height="170" as="geometry" />
+    </mxCell>
+    <mxCell id="b_id" value="PK: ID_Barang (VC)" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" vertex="1" parent="barang">
+      <mxGeometry y="30" width="180" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="b_nama" value="Nama_Barang" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" vertex="1" parent="barang">
+      <mxGeometry y="50" width="180" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="b_beli" value="Harga_Beli" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" vertex="1" parent="barang">
+      <mxGeometry y="70" width="180" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="b_jual" value="Harga_Jual" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" vertex="1" parent="barang">
+      <mxGeometry y="90" width="180" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="b_stok" value="Stok" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" vertex="1" parent="barang">
+      <mxGeometry y="110" width="180" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="b_margin" value="Margin (G)" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" vertex="1" parent="barang">
+      <mxGeometry y="130" width="180" height="20" as="geometry" />
+    </mxCell>
+
+    <!-- Rincian_Faktur Table -->
+    <mxCell id="rincian" value="Rincian_Faktur" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" vertex="1" parent="1">
+      <mxGeometry x="320" y="320" width="180" height="170" as="geometry" />
+    </mxCell>
+    <mxCell id="r_id" value="PK: ID_Rincian (INT)" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" vertex="1" parent="rincian">
+      <mxGeometry y="30" width="180" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="r_no" value="FK: No_Faktur (VC)" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" vertex="1" parent="rincian">
+      <mxGeometry y="50" width="180" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="r_barang" value="FK: ID_Barang (VC)" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" vertex="1" parent="rincian">
+      <mxGeometry y="70" width="180" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="r_jumlah" value="Jumlah" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" vertex="1" parent="rincian">
+      <mxGeometry y="90" width="180" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="r_satuan" value="Harga_Beli_Satuan" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" vertex="1" parent="rincian">
+      <mxGeometry y="110" width="180" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="r_sub" value="Subtotal (G)" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" vertex="1" parent="rincian">
+      <mxGeometry y="130" width="180" height="20" as="geometry" />
+    </mxCell>
+
+    <!-- Relationships -->
+    <!-- Distributor to Faktur -->
+    <mxCell id="rel1" value="" style="edgeStyle=orthogonalEdgeStyle;fontSize=12;html=1;endArrow=ERmany;endFill=0;startArrow=ERone;startFill=0;" edge="1" parent="1" source="distributor" target="faktur">
+      <mxGeometry width="100" height="100" relative="1" as="geometry">
+        <mxPoint x="220" y="110" as="sourcePoint" />
+        <mxPoint x="320" y="110" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+
+    <!-- Faktur to Rincian_Faktur -->
+    <mxCell id="rel2" value="" style="edgeStyle=orthogonalEdgeStyle;fontSize=12;html=1;endArrow=ERmany;endFill=0;startArrow=ERone;startFill=0;" edge="1" parent="1" source="faktur" target="rincian">
+      <mxGeometry width="100" height="100" relative="1" as="geometry">
+        <mxPoint x="410" y="190" as="sourcePoint" />
+        <mxPoint x="410" y="320" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+
+    <!-- Barang to Rincian_Faktur -->
+    <mxCell id="rel3" value="" style="edgeStyle=orthogonalEdgeStyle;fontSize=12;html=1;endArrow=ERmany;endFill=0;startArrow=ERone;startFill=0;" edge="1" parent="1" source="barang" target="rincian">
+      <mxGeometry width="100" height="100" relative="1" as="geometry">
+        <mxPoint x="690" y="210" as="sourcePoint" />
+        <mxPoint x="500" y="405" as="targetPoint" />
+        <Array as="points">
+            <mxPoint x="690" y="405" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+
+  </root>
+</mxGraphModel></diagram></mxfile>
