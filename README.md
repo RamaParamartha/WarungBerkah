@@ -1,11 +1,17 @@
-Mini Project ERD & Database
-Identitas Mahasiswa
-NIM : 250040004 Nama Lengkap: I Gede Made Paramartha Nugraha
+# Project ERD & Database
 
-Informasi Proyek
+# Identitas Mahasiswa
+
+NIM : 250040004
+
+Nama Lengkap: I Gede Made Paramartha Nugraha
+
+# Informasi Proyek
+
 Nama Proyek : Warung Berkah
 
-Deskripsi Singkat
+# Deskripsi Singkat
+
 Sistem database untuk mengelola supplier, faktur, dan barang.
 
 Struktur File
