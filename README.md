@@ -1,6 +1,6 @@
 Mini Project ERD & Database
 Identitas Mahasiswa
-NIM : 250040103 Nama Lengkap: I Putu Maha Aryanatha
+NIM : 250040004 Nama Lengkap: I Gede Made Paramartha Nugraha
 
 Informasi Proyek
 Nama Proyek : Warung Berkah
@@ -10,5 +10,5 @@ Sistem database untuk mengelola supplier, faktur, dan barang.
 
 Struktur File
 README.md
-ERD_WarungBerkah.drawio
-DB_WarungBerkah.sql
+WarungBerkah_ERD.drawio
+WarungBerkah.sql
